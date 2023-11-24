@@ -10,7 +10,6 @@ function binarySearch(arr, item) {
 
         if (guess === item) {
             console.log(mid)
-            return guess
         } else if (guess > item) {
             high = mid - 1
         } else {
