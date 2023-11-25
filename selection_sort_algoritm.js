@@ -11,7 +11,7 @@ function findSmallest(arr) {
     console.log(`smallest int: ${smallestInt}`)
     return smallestIndex
 }
-
+// the run time of the selection sort algoritm is O(n^2) : n squared
 function selectionSort(arr) {
     let newArr = []
     let length = arr.length

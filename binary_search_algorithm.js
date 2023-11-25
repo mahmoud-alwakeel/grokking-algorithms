@@ -1,5 +1,6 @@
 let arr1 = [1,2,3,4,5,6,7,8,9,10]
 
+// the run time of the binary search algoritm is O(log n)
 function binarySearch(arr, item) {
     let low = 0
     let high = arr.length - 1
@@ -9,7 +10,7 @@ function binarySearch(arr, item) {
         let guess = arr[mid]
 
         if (guess === item) {
-            console.log(mid)
+            console.log(mid) // the index of the mid
         } else if (guess > item) {
             high = mid - 1
         } else {
