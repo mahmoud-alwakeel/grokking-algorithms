@@ -12,7 +12,8 @@ function quickSort(array) {
                 larger.push(array[i])
             }
         }
-    return quickSort(smaller).concat([pivot], quickSort(larger))
+        // recursive call
+        return quickSort(smaller).concat([pivot], quickSort(larger))
     }
 }
 console.log(quickSort([10, 12, 1, 9, 11]))
